@@ -1,0 +1,11 @@
+{
+  "name": "grimace-codex-web-release",
+  "private": true,
+  "scripts": {
+    "test:1": "node scripts/test-grimace-codex-browser.cjs",
+    "test:2": "MATH_GAME_ID=grimace-codex node scripts/test-math-mobile-input.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}
