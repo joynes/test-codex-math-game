@@ -1,0 +1,13 @@
+{
+  "game": "grimace-codex",
+  "date": "2026-11-03",
+  "homepageCommit": "4cf29c7574fd6c803bb66dba8fb77786f5eee226",
+  "sourceHead": "07bf4ed2be5b219de95dc5a647f3d832f23b5e44",
+  "sourceWorktree": null,
+  "snapshotPaths": [
+    "games/grimace-codex",
+    "scripts/test-grimace-codex-browser.cjs",
+    "scripts/test-grimace-codex.mjs"
+  ],
+  "status": "Baseline saved before renewed browser audit. No new verification claimed."
+}
