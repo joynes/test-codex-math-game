@@ -1,0 +1,91 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #6a0dad;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+button {
+  background-color: #ffd700;
+  color: #6a0dad;
+  border: none;
+  padding: 20px 30px;
+  margin: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffe85c;
+}
+
+.menu, #game-screen, #exit-screen {
+  padding-top: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#progress {
+  font-size: 1.2rem;
+}
+
+#question {
+  font-size: 2rem;
+}
+
+#answers button {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.grimace {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  background-color: #8a2be2;
+  border-radius: 50%;
+  position: relative;
+}
+
+.grimace::before,
+.grimace::after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  top: 40px;
+}
+
+.grimace::before {
+  left: 40px;
+}
+
+.grimace::after {
+  right: 40px;
+}
+
+.grimace.happy {
+  animation: wave 1s ease-in-out;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}

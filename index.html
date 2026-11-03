@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Milians Grimace Matte-spel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-menu" class="menu">
+    <h1>Milians Grimace Matte-spel</h1>
+    <button id="plus-btn">Plus</button>
+    <button id="minus-btn">Minus</button>
+    <button id="exit-btn">Avsluta spelet</button>
+  </div>
+
+  <div id="game-screen" class="hidden">
+    <div class="header">
+      <button id="back-btn">Tillbaka till startmenyn</button>
+      <span id="progress">Du har klarat 0 frågor!</span>
+    </div>
+    <div id="question-container">
+      <div id="grimace" class="grimace"></div>
+      <p id="question"></p>
+      <div id="answers"></div>
+      <p id="message"></p>
+    </div>
+  </div>
+
+  <div id="exit-screen" class="hidden">
+    <h2>Tack för att du spelade!</h2>
+    <button id="exit-back-btn">Tillbaka till startmenyn</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
