@@ -4,11 +4,12 @@
   "baselineCommit": "39d0cdc4a0f96cd189ceb0e6364c63eb46ba620e",
   "result": "passed",
   "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
-  "checks": "Passed live all 20 fixed questions, both endings, saved resume, replay, wrong answers, exit and storage recovery. Desktop and mobile keyboard answers, full mobile plus/minus courses using touch, independent lift/cancel, lost focus, canceled Next and keyboard restart passed.",
+  "checks": "Passed live all 20 fixed questions, both endings, saved resume, replay, wrong answers, exit and storage recovery. Desktop and mobile keyboard answers, full mobile plus/minus courses using touch, independent lift/cancel, keyboard focus transfer, canceled Next and keyboard restart passed.",
   "findings": "No gameplay defect found; added repeatable input verification.",
   "testScripts": [
     "scripts/test-grimace-codex-browser.cjs",
     "scripts/test-math-mobile-input.cjs"
   ],
-  "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-codex/"
+  "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-codex/",
+  "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
 }
